@@ -29,7 +29,7 @@ const DesktopMenu = ( {selectedPage, setSelectedPage, flexBetween}: Props) => {
                   </a>
                   <ActionButton
                     setSelectedPage={setSelectedPage}
-                    page={navigationLinks.ourClasses}
+                    page={navigationLinks.contactUS}
                   >
                     Become a Member
                   </ActionButton>

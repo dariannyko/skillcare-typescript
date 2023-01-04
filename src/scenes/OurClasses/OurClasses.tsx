@@ -142,7 +142,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         <div className="mx-auto w-5/6">
         <Swiper
           breakpoints={{
-            300: {
+            200: {
               slidesPerView: 1,
             },
             800: {

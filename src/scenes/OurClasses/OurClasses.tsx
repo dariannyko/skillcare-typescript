@@ -12,7 +12,6 @@ import BarinDaniel from "@/assets/Teacher/BarinDaniel.png";
 import JonathanMask from "@/assets/Teacher/JonathanMask.png"; 
 import FiveStars from "@/assets/Rate/FiveStars.png";
 import FourStars from "@/assets/Rate/FourStars.png";
-
 import { navigationLinks } from "@/App";
 import { ClassItem } from "./ClassItem";
 import { SectionHeader } from "@/shared/SectionHeader";
@@ -22,7 +21,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper'
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { useState } from "react";
+
 
 const classes: Array<ClassesType> = [
   {

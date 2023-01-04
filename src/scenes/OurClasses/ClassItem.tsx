@@ -1,4 +1,4 @@
-import Clock from "@/assets/Clock.svg";
+import Clock from "@/assets/Icons/Clock.svg";
 
 type Props = {
   classImage: string;

@@ -159,9 +159,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         spaceBetween={50}
         slidesPerView={3}
         navigation
-        
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}>
+        >
 
           {classes.map((item: ClassesType, index) => (
             <SwiperSlide>{<ClassItem 

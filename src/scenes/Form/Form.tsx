@@ -4,7 +4,7 @@ import { FormEvent } from "react";
 type Props = {};
 
 const Form = (props: Props) => {
-    const inputStyles =
+  const inputStyles =
     "mb-5 w-full rounded-lg bg-blue-50 px-5 py-3 placeholder-gray-50 placeholder:font-medium text-gray-100 font-semibold  outline-secondary-500";
   const {
     register,
@@ -21,10 +21,10 @@ const Form = (props: Props) => {
 
   return (
     <form
-      method="POST"
-      action="https://formsubmit.co/el/lamare"
       target="_blank"
       onSubmit={onSubmit}
+      method="POST"
+      action="https://formsubmit.co/fcd8d63ed72e3213bc4d65081f92ed35"
     >
       <input
         type="text"
@@ -36,7 +36,7 @@ const Form = (props: Props) => {
         })}
       />
       {errors.name && (
-        <p className="text-pink-500 mt-1">
+        <p className="mt-1 text-pink-500">
           {errors.name.type === "required" && "This field is required"}
           {errors.name.type === "maxLength" && "Max length is 100 char"}
         </p>
@@ -51,7 +51,7 @@ const Form = (props: Props) => {
         })}
       />
       {errors.email && (
-        <p className="text-pink-500 mt-1">
+        <p className="mt-1 text-pink-500">
           {errors.email.type === "required" && "This field is required"}
           {errors.email.type === "pattern" && "Invalid email address"}
         </p>
@@ -67,7 +67,7 @@ const Form = (props: Props) => {
         })}
       />
       {errors.message && (
-        <p className="text-pink-500 mt-1">
+        <p className="mt-1 text-pink-500">
           {errors.message.type === "required" && "This field is required"}
           {errors.message.type === "maxLength" && "Max length is 2000 char"}
         </p>
@@ -75,11 +75,12 @@ const Form = (props: Props) => {
 
       <button
         type="submit"
-        className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 uppercase text-white transition duration-500 hover:bg-orange-500">
+        className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 uppercase text-white transition duration-500 hover:bg-orange-500"
+      >
         Submit
       </button>
     </form>
   );
 };
 
-export {Form}
+export { Form };
